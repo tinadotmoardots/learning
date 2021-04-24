@@ -1,0 +1,13 @@
+#This is terraform code to create a t3.micro ec2 instance with AWS
+
+provider "aws" {
+  region = "us-east-1"
+}
+resource "aws_instance" "vm" {
+  ami           = "ami-0742b4e673072066f"
+  subnet_id     = "subnet-048c041c19c5b9d5a"
+  instance_type = "t3.micro"
+  tags = {
+    Name = "my-first-tf-node"
+  }
+}
