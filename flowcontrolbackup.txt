@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#this script demonstrates using flow control for a backup script. You can use ctrl+c to cancel the script and clean up copied files and directories. 
+
+#gives an error when failed to specify the log
+if [ -z "$1"]; then
+        echo "You will need to specify the log file. Example: ./backup.sh mylog."
+        exit 255;
+fi
+
+MYLOG=$1
+function ctrlc {
+        rm -rf /home/$USER/work_backup
+        rm -f /home/$USER/$MYLOG
+        echo "received Ctrl+C"
+        exit 255
+}
+
+trap ctrlc SIGINT
+
+echo "Timestamp before work is done $(date +"%D %T")" >> /home/$USER/$MYLOG
+echo "Creating backup directory" >> /home/$USER/$MYLOG
+mkdir /home/$USER/work_backup
+
+echo "Copying Files" >> /home/$USER/$MYLOG
+cp -v /home/$USER/work/* /home/$USER/work_backup/ >> /home/$USER/$MYLOG
+echo "Finished Copying Files" >> /home/$USER/$MYLOG
+echo "Timestamp after work is done $(date +"%D %T")" >> /home/$USER/$MYLOG
+
+sleep 15
