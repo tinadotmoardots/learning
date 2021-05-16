@@ -17,3 +17,24 @@ This week my focus was more on Terraform and Linux. I worked on learning more ab
 That said, my Terraform lab for the week was completing setup of an Apache Web Server on AWS. That was easy enough after the big youtube project! After that, the remaining Terraform stuff was learing about state storage and exploring state options with things like AWS S3, which tied into the AWS stuff I've been learing as well. 
 For Linux this week, I worked a little bit with loops and substitutions and implemented some flow control into a backup script. I feel like I understand the most basic of things in bash, but I'm still in could pass a multiple choice test but fail if I was graded on writing and demoing my own scripts. 
 I had my HTL interview this week! I'm not super confident on how that went, but every interview is an opportunity for practice. I let nerves get the best of me, which I wasn't expecting to happen. I did the best I could in the moment though, and that's all I can ask of myself. In the future I'll be sure to get some better interview prep in. 
+
+5/9-5/15
+Code wars was rough. I'm at the point where I know what the legos are, and what they're used for, but I'm struggling with putting it into practice. I can follow a guide but not put things together in my own head very well. I feel like I tend to just look up how to do things and essentially just copy and paste what I find. I'd like to get to the point where I don't have to look up things. I'm guessing this is just a hump I'll have to brute force myself through. 
+
+I figured out some Terraform stuff, like I said before, the wording on things seems to be what is making it rough on me. For example, in the lesson that modules were introduced, it was phrased, "a module is a container for multiple resources that can be used together." That made no sense to me and was just confusing. However, later on, it was phrased as, "Terraform modules are a good way to abstract out repeated chunks of code, making it reusable across other projects." That one made sense!
+
+This week I honestly didn't get much done because of being down for the covid shot. 
+
+What was your solution to the Codewars program, how would you optimize it? 
+#!/bin/bash
+
+countToTwenty() {
+ echo "Count: "{1..20}
+}
+
+countToTwenty
+
+However, I did end up looking this up. Idk if I'm putting too much pressure too soon on myself, but I don't like that I had to. I don't think I could optimize it any further?
+What are three things learned from Linux Operating System Fundamentals?
+I learned that Linux is FASCINATING OH MY. I learned about how OS's in general work, which was neat. I learned what a kernel is (a computer program at the core of a computer's operating system that has complete control over everything in the system).
+
