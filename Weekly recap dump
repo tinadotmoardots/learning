@@ -38,3 +38,39 @@ However, I did end up looking this up. Idk if I'm putting too much pressure too 
 What are three things learned from Linux Operating System Fundamentals?
 I learned that Linux is FASCINATING OH MY. I learned about how OS's in general work, which was neat. I learned what a kernel is (a computer program at the core of a computer's operating system that has complete control over everything in the system).
 
+5/16-5/22
+
+What is a VPN, and when would you use it?
+A VPN is a virtual private network, and it uses the IP connectivity of the internet to connect remote clients to remote ites in an encrypted private connection. I would use it to privately and securely connect to internal company resources, to protect myself from unsecured wifi, like at a coffee shop or a hotel, etc. 
+
+What is the TCP Handshake? 
+The TCP handshake is a three way handshake that happens before data is transmitted to ensure there is a good connection. It first sends a syn, then waits for a syn ack, and then sends another ack, and then data can be sent. 
+
+What is the anatomy of an IP address? 
+For IPv4, it's a 32 bit number, split into 4 8 bit octets. The first octet represents the class. The first two octets are the network part, and the last two are the host part. 
+
+What are some different ways to debug Terraform?
+You can use TF_LOG to enable verbose logging in Terraform. You can also use trace, debug, info, warn, error, but trace is the msot reliable and verbose. 
+
+How’d the AWS Cloud Practitioner stuff go? 
+The AWS Cloud Practicioner is currently too basic for AWS lol. But it's a good refresher. I'm skipping some of the stuff I already have a good handle on, like IAM and such. I'll keep going through it because best practices and all that.
+
+Is the pacing okay?
+Yes, pacing is going well, I feel like. 
+
+Are you understanding the content?
+For the most part, yes. I still don't feel confident with scripts, but I also haven't really found time to delve into it in earnest. There's just this brick wall I need to find a way over. Linux utilities makes my brain shut down and I'm still getting over that hump. Chapter 2.3 went from ok I get it to "ps -eo pid, user, start_time, cmd | grep -v grep | grep -e START -e apache" I think it may just be the difference between knowing words in a language, and knowing how to speak it. I can follow someone's blueprint, but not use the tools to build my own. 
+
+Is there stuff you wish was covered differently or in more detail? 
+Just on the linux stuff, like in the above example I know that this is listing processes, and it's saying to have the columns be pid, user, start_time and command, but after that I'm lost. 
+
+Things I thought were cool/exciting: Learning about OSI was really cool, I didn't realize how insane the early tech nerd community was. Like literally all of the internet and computers exist as they currently are because a bunch of nerds had morals and strong feelings about how code should be handled. Terraform workspaces was super awesome, too. Being able to have a test workspace and then run code on it, before swapping over and running it on another is really nice to have, epecially as you can set specific things to happen depending on the workspace name you're currently using. I also really like that I now understand more about how digwebinterface works, and how to read traces in there more. 
+
+Things that were hard: Most of that OS fundamentals course is TORTURE. But his enthusiasm for it does shine through and gets me excited at times. It's a dry subject though, so I get it. 
+
+Things I need to go back and look up: 
+-What exactly is a container and how is it used
+-netmask
+-With subnetting, what does masking off mean?
+
+All in all, this week felt pretty good. I don't feel like I had any major leaps and bounds, but I also didn't feel like I was losing traction. This is especially good because I also caught up on last weeks work from when I was out from the covid shot. 
