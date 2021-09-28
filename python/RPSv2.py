@@ -19,9 +19,9 @@ elif player1 == "rock":
 		print(p2)
 elif player1 == "paper":
 	if player2 == "rock":
-		print(p2)
-	elif player2 == "scissors":
 		print(p1)
+	elif player2 == "scissors":
+		print(p2)
 elif player1 == "scissors":
 	if player2 == "rock":
 	 	print(p2)
